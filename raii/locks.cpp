@@ -29,8 +29,8 @@ int main() {
   t2.join();
 
   // Call our better function using RAII
-  std::thread t3(print_func);
-  std::thread t4(print_func);
+  std::thread t3(better_print_func);
+  std::thread t4(better_print_func);
   t3.join();
   t4.join();
 
